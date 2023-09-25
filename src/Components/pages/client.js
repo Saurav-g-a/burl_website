@@ -30,7 +30,7 @@ function Client() {
     fd.append("subject", subject);
     event.preventDefault();
 
-    axios.post("http://127.0.0.1:8000/api/contact_us", fd).then((res) => {
+    axios.post("http://3.110.30.19/api/contact_us", fd).then((res) => {
       console.log(res);
     });
   };
