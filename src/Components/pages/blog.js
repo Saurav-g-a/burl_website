@@ -64,7 +64,7 @@ function Blog() {
               />
               <div className="ml-4">
                <Link
-               to="/Full_blog"
+               to={`/full-blog/${blog_data[1]?.id}`}
                   className="mb-4 text-lg font-bold text-[#747474]"
                 >
                   {blog_data[1]?.blog_post_title}
@@ -81,7 +81,8 @@ function Blog() {
                 alt="Post image"
               />
               <div className="ml-4">
-              <Link      to="/Full_blog"
+              <Link     
+               to={`/full-blog/${blog_data[2]?.id}`}
                   className="mb-4 text-lg font-bold text-[#747474]"
                 >
                   {blog_data[2]?.blog_post_title}
@@ -109,7 +110,9 @@ function Blog() {
                 className="w-full h-[250px] mb-5"
                 alt="Post image"
               />
-              <Link to="/Full_blog" className="text-lg font-bold text-[#747474]">
+              <Link
+               to={`/full-blog/${blog_data[index]?.id}`} 
+               className="text-lg font-bold text-[#747474]">
                 {data.blog_post_title}
               </Link>
               <p className="text-[#747474] mt-5">{data.blog_post_text}</p>

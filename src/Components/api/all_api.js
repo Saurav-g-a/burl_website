@@ -89,3 +89,13 @@ export const winner = async () => {
     });
   return response;
 };
+
+export const full_blog = async (id) => {
+  const response = await axios
+    .get(`http://3.110.30.19/api/full-blog/${id}`)
+    .then((res) => {
+      return res.data;
+    });
+  return response;
+};
+

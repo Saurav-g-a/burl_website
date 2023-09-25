@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import Banner from "../common/banner";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { landings, winner } from "../api/all_api";
 
 function Landing() {
@@ -318,12 +318,12 @@ function Landing() {
             {landing_data[0]?.peekapoo_title}
           </h3>
           <p className="py-5 text-lg">{landing_data[0]?.peekapoo_text}</p>
-          <button
+          <Link to={'/offers'}
             className="bg-[#fd92b4] text-white px-5 py-3 rounded-lg"
             type="button"
           >
             Learn More
-          </button>
+          </Link>
         </div>
         <div className="md:col-span-6 col-span-12">
           <img
