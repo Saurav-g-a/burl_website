@@ -193,7 +193,7 @@ function Landing() {
             How to win the gift baskets?
           </h1>
         </div>
-        <div className="grid grid-cols-12 gap-12 pb-10 ">
+        <div className="grid grid-cols-12 md:gap-12 pb-10 ">
           <div className="col-span-12 md:col-span-4 text-center">
             <img
               src="./section/register.svg"
