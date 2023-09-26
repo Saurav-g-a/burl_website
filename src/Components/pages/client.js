@@ -30,7 +30,7 @@ function Client() {
     fd.append("subject", subject);
     event.preventDefault();
 
-    axios.post("http://3.110.30.19/api/contact_us", fd).then((res) => {
+    axios.post("https://laravel.myrefera.com/api/contact_us", fd).then((res) => {
       console.log(res);
     });
   };

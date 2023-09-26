@@ -1,1 +1,1 @@
-export const api = 'http://3.110.30.19/' ;
+export const api = 'https://laravel.myrefera.com/' ;
