@@ -1,8 +1,11 @@
 import axios from "axios";
+const API_URL = process.env.REACT_APP_API_URL
+console.log(API_URL)
 
+axios.defaults.baseURL = API_URL
 export const upcomingEvents = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-upcoming-event`)
+    .get(`get-upcoming-event`)
     .then((res) => {
       return res.data;
     });
@@ -11,7 +14,7 @@ export const upcomingEvents = async () => {
 
 export const cetagory = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-category`)
+    .get(`get-category`)
     .then((res) => {
       return res.data;
     });
@@ -20,7 +23,7 @@ export const cetagory = async () => {
 
 export const testimonial = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-testimonial`)
+    .get(`get-testimonial`)
     .then((res) => {
       return res.data;
     });
@@ -29,7 +32,7 @@ export const testimonial = async () => {
 
 export const faqs = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-client-page-content`)
+    .get(`get-client-page-content`)
     .then((res) => {
       return res.data;
     });
@@ -38,7 +41,7 @@ export const faqs = async () => {
 
 export const blogs = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-blog-page-content`)
+    .get(`get-blog-page-content`)
     .then((res) => {
       return res.data;
     });
@@ -47,7 +50,7 @@ export const blogs = async () => {
 
 export const events = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-latest_event`)
+    .get(`get-latest_event`)
     .then((res) => {
       return res.data;
     });
@@ -56,7 +59,7 @@ export const events = async () => {
 
 export const offerss = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-offer-page-content`)
+    .get(`get-offer-page-content`)
     .then((res) => {
       return res.data;
     });
@@ -65,7 +68,7 @@ export const offerss = async () => {
 
 export const homeBanner = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-banner-content`)
+    .get(`get-banner-content`)
     .then((res) => {
       return res.data;
     });
@@ -74,7 +77,7 @@ export const homeBanner = async () => {
 
 export const landings = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-home-page-content`)
+    .get(`get-home-page-content`)
     .then((res) => {
       return res.data;
     });
@@ -83,7 +86,7 @@ export const landings = async () => {
 
 export const winner = async () => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/get-images`)
+    .get(`get-images`)
     .then((res) => {
       return res.data;
     });
@@ -92,7 +95,7 @@ export const winner = async () => {
 
 export const full_blog = async (id) => {
   const response = await axios
-    .get(`https://laravel.myrefera.com/api/full-blog/${id}`)
+    .get(`full-blog/${id}`)
     .then((res) => {
       return res.data;
     });

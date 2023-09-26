@@ -8,6 +8,11 @@ import Modal from "../common/Modal";
 import { faqs, testimonial } from "../api/all_api";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
+const API_URL = process.env.REACT_APP_API_URL
+console.log(API_URL)
+
+axios.defaults.baseURL = API_URL
 function Client() {
   const [testimonials, setTestimonials] = useState([]);
   const [activeIndex, setActiveIndex] = useState(null);
@@ -30,7 +35,7 @@ function Client() {
     fd.append("subject", subject);
     event.preventDefault();
 
-    axios.post("https://laravel.myrefera.com/api/contact_us", fd).then((res) => {
+    axios.post("contact_us", fd).then((res) => {
       console.log(res);
     });
   };
