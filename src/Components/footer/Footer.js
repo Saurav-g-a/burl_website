@@ -31,13 +31,13 @@ function Footer() {
             <Link to="">Healthcare FAQ</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="">Terms of use</Link>
+            <Link to="/terms">Terms of use</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="">Contest Rules</Link>
+            <Link to="/contest-rules">Contest Rules</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="">Privacy policy</Link>
+            <Link to="/privacy-policy">Privacy policy</Link>
             </li>
           </ul>
         </div>

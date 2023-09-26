@@ -11,6 +11,9 @@ import Full_blog from "./Components/pages/full_blog";
 import Offers from "./Components/pages/offers";
 import Buyer from "./Components/pages/buyer";
 import ComingSoon from "./Components/pages/coming_soon";
+import Privacy from "./Components/pages/privacy";
+import Contest from "./Components/pages/contest";
+import Term from "./Components/pages/term";
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
             <Route path="/offers" element={<Offers />} />
             <Route path="/client/buyer" element={<Buyer />} />
             <Route path="/comming-soon" element={<ComingSoon />} />
+            <Route path="/privacy-policy" element={<Privacy />} />
+            <Route path="/contest-rules" element={<Contest />} />
+            <Route path="/terms" element={<Term />} />
           </Routes>
         </Router>
       </div>
