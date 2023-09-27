@@ -109,7 +109,7 @@ function Distributor() {
                 </a>
               </p>
             </div>
-            <div className="md:col-span-6 col-span-12">
+            <div className="md:col-span-6 col-span-12 mt-5">
               <img
                 src="../distributor/distributor1.png"
                 alt="Distributor Image"
