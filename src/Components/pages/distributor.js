@@ -58,7 +58,7 @@ function Distributor() {
       <Header />
       <section className="md:px-16 px-5">
         <div>
-          <div className="grid grid-cols-12 gap-8 my-10">
+          <div className="grid grid-cols-12 md:gap-8 my-10">
             <div className="md:col-span-6 col-span-12">
               <img
                 src="../distributor/distributor.webp"
@@ -80,7 +80,7 @@ function Distributor() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-12 gap-8 my-10">
+          <div className="grid grid-cols-12 md:gap-8 my-10">
             <div className="md:col-span-6 col-span-12">
               <h3 className="font-semibold text-[#699dea] text-3xl py-5">
                 Why become a baby brands partner?

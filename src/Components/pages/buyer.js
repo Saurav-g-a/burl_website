@@ -8,9 +8,9 @@ function Buyer() {
     <Header/>
     <section className='md:px-16 my-10 px-5'> 
        <h3 className='text-4xl font-bold text-[#429ade] mb-8 text-center'>Why choose Buyers Guide?</h3>
-         <div className='grid grid-cols-12 gap-8'>
+         <div className='grid grid-cols-12 md:gap-8'>
             <div className='md:col-span-7 col-span-12'>
-                <div className='grid grid-cols-12 gap-8'>
+                <div className='grid grid-cols-12 md:gap-8'>
                     <div className='md:col-span-6 col-span-12 text-[#c8267f] text-center'>
                         <h3 className='text-2xl px-4 my-5 font-bodoni'>TARGETED AUDIENCE</h3>
                     </div>
@@ -18,7 +18,7 @@ function Buyer() {
                     <p className='my-3 text-lg font-semibold'>100% Targeted to new and expecting parents.</p>
                     </div>
                 </div>
-                <div className='grid grid-cols-12 gap-8'>
+                <div className='grid grid-cols-12 md:gap-8'>
                     <div className='md:col-span-6 col-span-12  text-[#c8267f] text-center'>
                     <h3 className='text-2xl px-4 my-5 font-bodoni'>DISTRIBUTION</h3>
                     </div>
@@ -26,7 +26,7 @@ function Buyer() {
                     <p className='my-3 text-lg font-semibold'>1700 Healthcare Professionals across Canada</p>
                     </div>
                 </div>
-                <div className='grid grid-cols-12 gap-8'>
+                <div className='grid grid-cols-12 md:gap-8'>
                     <div className='md:col-span-6 col-span-12  text-[#c8267f] text-center'>
                     <h3 className='text-2xl px-4 my-5 font-bodoni'>HIGH READERSHIP ENGAGEMENT</h3>
                     </div>
@@ -34,7 +34,7 @@ function Buyer() {
                     <p className='my-3 text-lg font-semibold'>93% of parents change their buying habits post receiving the Babybrands bags.</p>
                     </div>
                 </div>
-                 <div className='grid grid-cols-12 gap-8'>
+                 <div className='grid grid-cols-12 md:gap-8'>
                  <div className='md:col-span-6 col-span-12  text-[#c8267f] text-center'>
                     <h3 className='text-2xl px-4 my-5 font-bodoni'>BRAND & PRODUCT AWARENESS</h3>
                 </div>
@@ -54,7 +54,7 @@ function Buyer() {
           <div>
             <h3 className='text-4xl text-[#429ade] uppercase font-bold px-4 my-5 font-bodoni mb-8'>Let's talk stats</h3>
           </div>
-          <div className='grid grid-cols-12 gap-8 my-5'>
+          <div className='grid grid-cols-12 md:gap-8 my-5'>
             <div className='md:col-span-2 col-span-12 '>
                 <img src='../buyer/buyer11.png' className='w-[250px] h-[140px] mx-auto' alt='Parents'/>
               <div className='text-white rounded-full text-center text-lg bg-[#ff66c4]'>
@@ -66,7 +66,7 @@ function Buyer() {
             </div>
           </div>
 
-          <div className='grid grid-cols-12 gap-8 my-5'>
+          <div className='grid grid-cols-12 md:gap-8 my-5'>
             <div className='md:col-span-2 col-span-12 '>
             <img src='../buyer/buyer14.png' className='w-[250px] h-[140px] mx-auto' alt='Parents'/>
               <div className='text-white rounded-full text-center text-lg bg-[#ff66c4]'>
@@ -78,7 +78,7 @@ function Buyer() {
             </div>
           </div>
 
-          <div className='grid grid-cols-12 gap-8 my-5'>
+          <div className='grid grid-cols-12 md:gap-8 my-5'>
             <div className='md:col-span-2 col-span-12 '>
             <img src='../buyer/buyer13.png' className='w-[250px] h-[140px] mx-auto' alt='Parents'/>
               <div className='text-white rounded-full text-center text-lg bg-[#ff66c4]'>
@@ -92,7 +92,7 @@ function Buyer() {
           {/* <div>
             <h3 className='text-4xl text-[#429ade] uppercase font-bold px-4 mt-8 font-bodoni mb-8'>Let's talk stats</h3>
           </div> */}
-          <div className='grid grid-cols-12 gap-8 my-5'>
+          <div className='grid grid-cols-12 md:gap-8 my-5'>
             <div className='md:col-span-2 col-span-12 '>
             <img src='../buyer/buyer12.png' className='w-[250px] h-[140px] mx-auto' alt='Parents'/>
               <div className='text-white rounded-full text-center text-lg bg-[#ff66c4]'>
@@ -103,7 +103,7 @@ function Buyer() {
                 <p className='text-lg '>The average age of parents engaging with the Buyer's Guide Magazine is 29 years old, indicating that it resonates with a young and diverse audience. By providing new parents with the opportunity to try products firsthand, the magazine enhances their confidence in making informed decisions, thus benefiting both the consumers and your brand.</p>
             </div>
           </div>
-          <div className='grid grid-cols-12 gap-8 my-5'>
+          <div className='grid grid-cols-12 md:gap-8 my-5'>
             <div className='md:col-span-2 col-span-12 '>
             <img src='../buyer/buyer15.png' className='w-[250px] h-[140px] mx-auto' alt='Parents'/>
               <div className='text-white rounded-full text-center text-lg bg-[#ff66c4]'>
@@ -117,7 +117,7 @@ function Buyer() {
        </section>
 
        <section className='md:px-16 px-5 mb-10'>
-            <div className='grid grid-cols-12 gap-8'>
+            <div className='grid grid-cols-12 md:gap-8'>
                <div className='md:col-span-6 col-span-12 '>
                 <h3 className='text-4xl text-[#429ade] uppercase font-bold px-4 my-5 font-bodoni mb-8'>Buyer's guide specs</h3>
                    <div className='mt-10 ml-16'>

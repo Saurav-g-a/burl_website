@@ -173,7 +173,7 @@ function Client() {
 
       <Header />
       <section className="md:px-16 px-5">
-        <div className="grid grid-cols-12 gap-8 py-10">
+        <div className="grid grid-cols-12 md:gap-8 py-10">
           <div className="md:col-span-6 col-span-12">
             <img src="../client/client.jpg" alt="Client Image" />
           </div>
@@ -198,7 +198,7 @@ function Client() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-8 py-10">
+        <div className="grid grid-cols-12 md:gap-8 py-10">
           <div className="md:col-span-6 col-span-12">
             <h3 className="font-semibold text-[#699dea] text-3xl py-5">
               What is a Baby Brands Gift Bag?{" "}
@@ -223,7 +223,7 @@ function Client() {
             <img src="../client/client3.png" alt="Baby Brands Gift Bag" />
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-8 py-10">
+        <div className="grid grid-cols-12 md:gap-8 py-10">
           <div className="md:col-span-6 col-span-12">
             <img
               src="../client/client4.png"
@@ -333,7 +333,7 @@ function Client() {
       </section>
 
       <section className="md:px-16 px-5 my-10">
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 md:gap-8">
           <div className="md:col-span-6 col-span-12">
             <img
               src="../client/client1.jpg"
@@ -353,7 +353,7 @@ function Client() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-8 py-10">
+        <div className="grid grid-cols-12 md:gap-8 py-10">
           <div className="md:col-span-6 col-span-12 self-center">
             <h3 className="font-semibold text-[#699dea] text-3xl py-5">
               Canada wide Distribution
@@ -368,7 +368,7 @@ function Client() {
             <img src="../client/client2.jpg" alt="Canada wide Distribution" />
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 md:gap-8">
           <div className="md:col-span-6 col-span-12">
             <img src="../client/client6.png" alt="Email Marketing" />
           </div>
@@ -382,7 +382,7 @@ function Client() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-8 py-10">
+        <div className="grid grid-cols-12 md:gap-8 py-10">
           <div className="md:col-span-6 col-span-12 self-center">
             <h3 className="font-semibold text-[#699dea] text-3xl py-5">
               Benefits of Baby Show Exhibitions
@@ -398,7 +398,7 @@ function Client() {
             <img src="../client/client5.png" alt="Exhibitions" />
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 md:gap-8">
           <div className="md:col-span-6 col-span-12">
             <img
               src="../client/about5.jpg"

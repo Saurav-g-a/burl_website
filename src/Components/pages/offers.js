@@ -36,7 +36,7 @@ function Offers() {
     <>
       <Header />
       <div className="md:px-16 my-8 px-5">
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 md:gap-8">
           <div className="md:col-span-6 col-span-12 self-center">
             <h3 className="text-[#699dea] text-3xl font-semibold">
               Featured Product

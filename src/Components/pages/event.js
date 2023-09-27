@@ -74,7 +74,7 @@ function Event() {
         <div className="grid grid-cols-12 gap-0 ">
           {event_data.map((data, index) => (
             <div className="md:col-span-6 col-span-12 mb-8 " key={index}>
-              <div className="grid grid-cols-12 gap-8">
+              <div className="grid grid-cols-12 md:gap-8">
                 <div className="md:col-span-6 col-span-12 md:ltr">
                   <img
                     src={data.latest_event_image}

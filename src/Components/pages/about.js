@@ -37,7 +37,7 @@ function About() {
         </div>
       </section>
       <section className="my-10 md:px-16 px-5">
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 md:gap-8">
           <div className="md:col-span-6 col-span-12">
             <div>
               <h3 className="font-semibold text-[#699dea] text-3xl py-5">
@@ -58,7 +58,7 @@ function About() {
             <img src="../about/about.jpg" alt="About us" />
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-8 my-12">
+        <div className="grid grid-cols-12 md:gap-8 my-12">
           <div className="md:col-span-6 col-span-12">
             <img src="../about/about1.jpg" alt="About us" />
           </div>
@@ -155,7 +155,7 @@ function About() {
           </h3>
         </div>
         {Object.values(Services).map((data, index) => (
-          <div className="grid grid-cols-12 gap-8 my-4">
+          <div className="grid grid-cols-12 md:gap-8 my-4">
             <div className="md:col-span-6 col-span-12">
               <div>
                 <h1 className="font-semibold text-[#699dea] text-3xl py-5">
