@@ -53,7 +53,7 @@ function Offers() {
               </p>
             </div>
           </div>
-          <div className="md:col-span-6 col-span-12">
+          <div className="md:col-span-6 col-span-12 mt-5">
             <img src="../buyer/buyer.jpg" alt="Featured Product" />
           </div>
         </div>
