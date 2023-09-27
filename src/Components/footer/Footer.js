@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -8,36 +8,44 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Modal from "../common/Modal";
 
 function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <section className=" bg-[#fff4f8] md:mx-12 mx-5 pt-20 mb-10">
       <div className="grid grid-cols-12 gap-6 md:px-16 px-5">
         <div className="md:col-span-2 col-span-6">
           <h3 className="text-lg font-bold text-[#838282]">Who we are?</h3>
           <p className="py-3 text-[#838282]">
-
-             <Link to="/about">About us</Link>
+            <Link to="/about">About us</Link>
           </p>
         </div>
         <div className="md:col-span-2 col-span-6">
           <h3 className="text-lg font-bold text-[#838282]">Support</h3>
           <ul>
             <li className="py-3 text-[#838282]">
-            <Link to="/client#faq">Client FAQ</Link>
+              <Link to="/client#faq">Client FAQ</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="">Healthcare FAQ</Link>
+              <Link to="">Healthcare FAQ</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="/terms">Terms of use</Link>
+              <Link to="/terms">Terms of use</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="/contest-rules">Contest Rules</Link>
+              <Link to="/contest-rules">Contest Rules</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="/privacy-policy">Privacy policy</Link>
+              <Link to="/privacy-policy">Privacy policy</Link>
             </li>
           </ul>
         </div>
@@ -45,19 +53,21 @@ function Footer() {
           <h3 className="text-lg font-bold text-[#838282]">SITE MAP</h3>
           <ul>
             <li className="py-3 text-[#838282]">
-            <Link to="">Partner with us</Link>
+              <Link to="" onClick={openModal}>
+                Partner with us
+              </Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="">Healthcare</Link>
+              <Link to="">Healthcare</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="/blog">Blogs</Link>
+              <Link to="/blog">Blogs</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="/event">Events</Link>
+              <Link to="/event">Events</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-            <Link to="/offers">Offers</Link>
+              <Link to="/offers">Offers</Link>
             </li>
           </ul>
         </div>
@@ -92,10 +102,10 @@ function Footer() {
           <div className="text-center mb-3">
             <FaPhoneAlt className="h-8 w-8 text-white mx-auto mb-3" />
             <p className="text-white text-base">
-              Phone:  <Link to="tel:905-803-9227"> 905-803-9227 </Link>{" "}
+              Phone: <Link to="tel:905-803-9227"> 905-803-9227 </Link>{" "}
             </p>
             <p className="text-white text-base">
-              Fax:  <Link to="tel:905-803-9874"> 905-803-9874 </Link>
+              Fax: <Link to="tel:905-803-9874"> 905-803-9874 </Link>
             </p>
           </div>
         </div>
@@ -103,14 +113,17 @@ function Footer() {
           <div className="text-center mb-3">
             <FaEnvelope className="h-8 w-8 text-white mx-auto mb-3" />
             <p className="text-white text-base">
-               <Link to="mailto:Info@babybrands.ca">Info@babybrands.ca </Link>
+              <Link to="mailto:Info@babybrands.ca">Info@babybrands.ca </Link>
             </p>
           </div>
         </div>
       </div>
 
       <div className="flex justify-between py-10 md:px-16 px-5">
-      <Link to={'/'}> <img src="../logo-remove.png" className="w-20" alt="logo" /></Link>
+        <Link to={"/"}>
+          {" "}
+          <img src="../logo-remove.png" className="w-20" alt="logo" />
+        </Link>
         <div className="flex  self-center">
           <div className="border border-black rounded-full p-2 cursor-pointer">
             <Link
@@ -138,6 +151,42 @@ function Footer() {
           </div>
         </div>
       </div>
+
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <div className="grid grid-cols-12 gap-4 py-10">
+          <div className="col-span-5 text-center py-5">
+            <p className="text-lg text-[#699dea] font-bold">
+              Are you A Brand ?
+            </p>
+            <p className="pt-12">
+              <Link
+                to="/client"
+                className="border-[#ffa8c5] text-[#ffa8c5] font-bold border-2 p-3"
+              >
+                Click Here
+              </Link>
+            </p>
+          </div>
+          <div className="col-span-2">
+            <div className="mx-auto w-[1px] h-10 mb-3 bg-[#699dea]"></div>
+            <p className="text-lg text-center text-[#699dea] font-bold">Or</p>
+            <div className="mx-auto w-[1px] h-10 mt-3 bg-[#699dea]"></div>
+          </div>
+          <div className="col-span-5 text-center py-5">
+            <p className="text-lg text-[#699dea] font-bold">
+              Are you A healthcare <br /> Professional ?
+            </p>
+            <p className="pt-5">
+              <Link
+                to="/distributor"
+                className="border-[#ffa8c5] font-bold text-[#ffa8c5] border-2 p-3"
+              >
+                Click Here
+              </Link>
+            </p>
+          </div>
+        </div>
+      </Modal>
     </section>
   );
 }
