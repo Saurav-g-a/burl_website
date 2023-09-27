@@ -36,7 +36,7 @@ function Footer() {
               <Link to="/client#faq">Client FAQ</Link>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="">Healthcare FAQ</Link>
+              <Link to="/distributor#faq">Healthcare FAQ</Link>
             </li>
             <li className="pb-3 text-[#838282]">
               <Link to="/terms">Terms of use</Link>
@@ -58,7 +58,7 @@ function Footer() {
               </Link>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="">Healthcare</Link>
+              <Link to="/distributor">Healthcare</Link>
             </li>
             <li className="pb-3 text-[#838282]">
               <Link to="/blog">Blogs</Link>

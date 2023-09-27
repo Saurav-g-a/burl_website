@@ -154,7 +154,7 @@ function Distributor() {
           ))}
         </Carousel>
       </section>
-      <section className="md:px-16 px-5 mb-16">
+      <section className="md:px-16 px-5 mb-16" id="faq">
         <div className="py-5">
           <h3 className="font-semibold text-[#699dea] text-center md:text-5xl text-xl py-5">
             FAQ's Section
