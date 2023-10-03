@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../common/Modal';
 import { Link } from 'react-router-dom';
+// import Logo from './Logo-remove.png'
 
 function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,7 +24,7 @@ function Header() {
       <nav className="flex items-center justify-between flex-wrap bg-[#fff4f8] p-6">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <Link to="/" className="flex">
-            <img src="../logo-remove.png" className="h-[50px]" alt="logo" />
+            <img src='./Logo-remove.png' className="h-[50px]" alt="logo" />
           </Link>
         </div>
         <div className="block lg:hidden">

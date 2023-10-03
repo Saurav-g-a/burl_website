@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Modal from "../common/Modal";
+// import Logo from './Logo-remove.png'
 
 function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,19 +34,19 @@ function Footer() {
           <h3 className="text-lg font-bold text-[#838282]">Support</h3>
           <ul>
             <li className="py-3 text-[#838282]">
-              <Link to="/client#faq">Client FAQ</Link>
+              <a href="/client#faq">Client FAQ</a>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="/distributor#faq">Healthcare FAQ</Link>
+              <a href="/distributor#faq">Healthcare FAQ</a>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="/terms">Terms of use</Link>
+              <a href="/terms">Terms of use</a>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="/contest-rules">Contest Rules</Link>
+              <a href="/contest-rules">Contest Rules</a>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="/privacy-policy">Privacy policy</Link>
+              <a href="/privacy-policy">Privacy policy</a>
             </li>
           </ul>
         </div>
@@ -58,16 +59,16 @@ function Footer() {
               </Link>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="/distributor">Healthcare</Link>
+              <a href="/distributor">Healthcare</a>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="/blog">Blogs</Link>
+              <a href="/blog">Blogs</a>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="/event">Events</Link>
+              <a href="/event">Events</a>
             </li>
             <li className="pb-3 text-[#838282]">
-              <Link to="/offers">Offers</Link>
+              <a href="/offers">Offers</a>
             </li>
           </ul>
         </div>
@@ -122,7 +123,7 @@ function Footer() {
       <div className="flex justify-between py-10 md:px-16 px-5">
         <Link to={"/"}>
           {" "}
-          <img src="../logo-remove.png" className="w-20" alt="logo" />
+          <img src='../Logo-remove.png' className="w-20" alt="logo" />
         </Link>
         <div className="flex  self-center">
           <div className="border border-black rounded-full p-2 cursor-pointer">
