@@ -31,7 +31,7 @@ function Full_blog() {
         </h3>
         <div className="">
           <p className="text-[#707070] text-xl leading-[40px] max-w-5xl mx-auto">
-            <span className="text-3xl font-bold">L</span> {blog_data?.blog_post_text}
+             {blog_data?.blog_post_text}
           </p>
         </div>
         <img
