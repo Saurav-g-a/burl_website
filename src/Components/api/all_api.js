@@ -102,3 +102,11 @@ export const full_blog = async (id) => {
   return response;
 };
 
+export const Featured = async (id) => {
+  const response = await axios
+    .get(`get_feature`)
+    .then((res) => {
+      return res.data;
+    });
+  return response;
+};

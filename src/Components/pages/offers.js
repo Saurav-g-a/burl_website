@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import { offerss, cetagory } from "../api/all_api";
+import { offerss, cetagory , Featured } from "../api/all_api";
 
 function Offers() {
   const [activeTab, setActiveTab] = useState(0);
   const [category, setCategory] = useState([]);
   const [offer, setOffer] = useState([]);
+  const [featureds, setFeatureds] = useState([]);
 
   useEffect(() => {
     cetagory()
@@ -30,6 +31,16 @@ function Offers() {
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
+      Featured()
+      .then((result) => {
+        if (result) {
+          setFeatureds(result.data);
+          console.log(result.data)
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
   }, []);
 
   return (
@@ -39,13 +50,11 @@ function Offers() {
         <div className="grid grid-cols-12 md:gap-8">
           <div className="md:col-span-6 col-span-12 self-center">
             <h3 className="text-[#699dea] text-3xl font-semibold">
-              Featured Product
+             {featureds[0]?.feature_title}
             </h3>
             <p className="my-5">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
+             
+              {featureds[0]?.feature_info}
             </p>
             <div className="flex">
               <p className="text-[#fff] text-lg bg-[#fd92b4] px-3 py-2 rounded-md cursor-pointer">
@@ -54,7 +63,8 @@ function Offers() {
             </div>
           </div>
           <div className="md:col-span-6 col-span-12 mt-5">
-            <img src="../buyer/buyer.jpg" alt="Featured Product" />
+            {/* <img src="../buyer/buyer.jpg" alt="Featured Product" /> */}
+            <img src={featureds[0]?.feature_image} alt="Featured Product" />
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ function Landing() {
   const [images, setImages] = useState([]);
   const navigate = useNavigate();
 
-  // console.log(landing_data);
+  console.log(images);
 
   const openModal = () => {
     navigate("/comming-soon");
@@ -94,6 +94,8 @@ function Landing() {
     winner()
       .then((result) => {
         if (result) {
+          console.log(result)
+         // const response = result.data
           setImages(result);
         }
       })
